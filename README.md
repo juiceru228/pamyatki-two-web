@@ -11,5 +11,5 @@ docker-compose up --build
 ```
 # Enjoy!
 **LINKs**:
-- Client: http://client:25252;
-- Server:  http://api:4000.
+- Client: http://127.0.0.1:25252;
+- Server: http://127.0.0.1:4000.
