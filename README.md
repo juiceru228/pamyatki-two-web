@@ -4,7 +4,7 @@ Simple forum
 Why not?
 # Requirements
 - Docker.
-# How to
+# ~~How to~~
 ~~In the root directory, where docker-compose.yml, in the terminal write the following:~~<br />
 Doesn't work, too lazy to fix it<br />
 ```console
