@@ -1,0 +1,82 @@
+import '../../App.css';
+import React, { useState, useEffect } from 'react';
+import axios from '../axios';
+import { Link } from 'react-router-dom';
+
+const MainPage = () => {
+  const [threads, setThreads] = useState([]);
+  const [title, setTitle] = useState('');
+
+  useEffect(() => {
+    loadThreads();
+  }, []);
+
+  const loadThreads = async () => {
+    try {
+      const response = await axios.get('/forum/threads');
+      console.log('Loaded threads:', response.data);
+      setThreads(response.data);
+    } catch (error) {
+      console.error('Failed to load threads', error);
+    }
+  };
+
+  const createThread = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await axios.post('/forum/threads', { title });
+      console.log('Thread created:', response.data);
+      if (response.data && response.data.id) {
+        setThreads([...threads, response.data]);
+        setTitle('');
+      }
+    } catch (error) {
+      console.error('Failed to create thread', error);
+    }
+  };
+
+  return (
+    <div>
+      <header className="App-header">
+        <h1>Welcome to forum P2W!</h1>
+      </header>
+      <nav>
+        <ul className="App-horizontList">
+          <li><Link to="/login" className='App-button'>Профиль</Link></li>
+          <li><button className='App-button'>Обсуждения</button></li>
+        </ul>
+      </nav>
+      <main>
+        <div>
+          <h2>Create a Thread</h2>
+          <form onSubmit={createThread}>
+            <input 
+              type="text" 
+              value={title} 
+              onChange={(e) => setTitle(e.target.value)} 
+              placeholder="Thread Title" 
+              required 
+            />
+            <button type="submit">Create Thread</button>
+          </form>
+        </div>
+        <div>
+          <h2>Threads</h2>
+          <ul>
+            {threads.map(thread => (
+              <li key={thread.id}>
+                <h3>{thread.title}</h3>
+                <Link to={`/threads/${thread.id}`}>View Messages</Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </main>
+      <footer className='App-footer'>
+        <p>&copy; 2024 PAMYATKI TWO WEB</p>
+      </footer>
+    </div>
+  );
+};
+
+export default MainPage;

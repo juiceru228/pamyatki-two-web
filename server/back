@@ -1,0 +1,29 @@
+/*CREATE TABLE users(
+    id SERIAL PRIMARY KEY,
+    username VARCHAR(28) NOT NULL UNIQUE,
+    passhash VARCHAR NOT NULL 
+);
+
+INSERT INTO users(username, passhash) values(1$,2$);
+
+
+CREATE TABLE threads (
+    id SERIAL PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    user_id INTEGER NOT NULL REFERENCES users(id),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+INSERT INTO threads (title, user_id) VALUES ($1, $2);
+
+CREATE TABLE messages (
+    id SERIAL PRIMARY KEY,
+    thread_id INTEGER NOT NULL REFERENCES threads(id),
+    user_id INTEGER NOT NULL REFERENCES users(id),
+    content TEXT,
+    image_url VARCHAR(255),
+    video_url VARCHAR(255),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+INSERT INTO messages (thread_id, user_id, content, image_url, video_url) VALUES ($1, $2, $3, $4, $5);
+*/

@@ -1,0 +1,193 @@
+.App-main {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .App-create-thread {
+    width: 50%; 
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .App-threads {
+    width: 50%; 
+    
+  }
+  
+  .App-thread {
+    margin-bottom: 10px; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .App-buttonToMessages {
+    transition: color 0.1s;
+  }
+  
+  .App-buttonToMessages:hover {
+    color: #a3ece9;
+  }
+  
+  
+  .App-delete-button {
+    margin-left: 10px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px; 
+    cursor: pointer; 
+  }
+  
+  .App-delete-button:hover {
+    background-color: #d32f2f;
+  }
+  
+  .App-create-thread-form {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .App-create-thread-input {
+    width: 100%;
+    padding: 100px;
+    font-size: 16px;
+    margin-bottom: 5px;
+    height: 100%;
+
+  }
+  
+  .App-create-thread-text{
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 20px;
+  }
+  .App-create-thread-button {
+    padding: 6px 16px;
+    font-size: 16px;
+    background-color: #2e7232;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+    color: white;
+  }
+  
+  .App-create-thread-button:hover {
+    background-color: #1baa23;
+  }
+
+  .App-footer {
+    text-align: center;
+    background-color: #282c34;
+    justify-content: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+  }
+  
+  .container {
+
+    display: flex;
+    align-items: center;
+  }
+  
+  .App-header {
+  
+    min-height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    
+  }
+
+  .App-horizontList {
+    background-color: #282c34;
+    align-items: center;
+    display: flex;
+    min-height: 10vh;
+    list-style-type: none;
+    
+  }
+  
+  .App-footer {
+    text-align: center;
+    background-color: #282c34;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+  }
+
+.alert-box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+  width: 80vw;
+  max-width: 400px;
+  padding: 30px;
+  margin: 20px auto;
+  box-sizing: border-box;
+  overflow-x: auto; 
+  max-width: 100vw;
+}
+
+@media (max-width: 768px) {
+  .alert-box {
+    width: 90vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .alert-box {
+    width: 95vw;
+  }
+}
+
+
+.message-details {
+  display: flex;
+  justify-content: space-between;
+}
+.message-author {
+  font-size: 16px;
+  margin-right: 10px; 
+}
+
+.message-number {
+  margin-left: auto;
+  color: #068fb1;
+  font-size: 12px;
+}
+
+.message-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.thread-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  list-style-type: none;
+}

@@ -1,0 +1,328 @@
+.thread-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    
+  }
+  
+  .message-container {
+    flex: 1;
+    padding-right: 20px;
+    
+  }
+  
+  .page-title {
+    text-align: center;
+    font-size: 24px;
+  }
+  
+  .message-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .message-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #cac5c5; 
+    border-radius: 5px;
+  }
+  
+  .message-content {
+    font-size: 16px;
+    margin-top: 10px;
+    white-space: pre-wrap;
+  }
+  
+  .message-media {
+    max-width: 100%;
+    margin-top: 10px;
+  }
+  
+  .create-message {
+    flex: 0 0 300px;
+  }
+  
+  .form-title {
+    font-size: 20px;
+  }
+  
+  .message-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    
+  }
+  
+  .file-input {
+    margin-bottom: 10px;
+    visibility: hidden;
+  }
+  
+  .submit-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .message-author {
+    font-size: 12px;
+    margin-right: 10px; 
+  }
+  
+  .message-details {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .message-text {
+    justify-content: 10px;
+    display: flex;
+  }
+  
+  .message-number {
+    margin-left: auto;
+    color: #068fb1;
+    font-size: 12px;
+  }
+  .message-replies {
+    margin-top: 10px;
+  }
+  
+  
+  .replies-list {
+    
+    font-size: 12px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .reply-item {
+    margin-right: 5px;
+  }
+  
+  .message-reply-link:link {
+    cursor: pointer;
+    text-decoration: none; 
+    color: rgb(7, 209, 245);
+  }
+  .message-reply-link:visited {
+    cursor: pointer;
+    text-decoration: none; 
+    color: rgb(7, 209, 245);
+  }
+  
+  .message-reply-link:hover {
+    cursor: pointer;
+    text-decoration: none; 
+    color: rgb(7, 117, 168);
+  }
+  
+  .message-link:link {
+    font-size: 16px;
+    margin-top: 10px;
+    white-space: pre-wrap;
+    text-decoration: none; 
+    color: rgb(7, 209, 245);
+  }
+  
+  .message-link:visited {
+    text-decoration: none; 
+    color: rgb(7, 209, 245);
+  }
+  
+  .message-link:hover {
+    text-decoration: none; 
+    color: rgb(7, 117, 168);
+  }
+  
+  .App-scroll-top-button {
+    position: fixed;
+    right: 20px;
+    top: 70px;
+    background-color: #84878a;
+    border: none;
+    border-radius: 5px;
+    padding: 20px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .App-scroll-down-button {
+    position: fixed;
+    right: 20px; 
+    bottom: 20px;
+    background-color: #84878a; 
+    border: none;
+    border-radius: 5px;
+    padding: 20px 20px;
+    font-size: 16px; 
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .App-scroll-down-button:hover{
+    background-color: #77b6fa;
+  }
+  
+  .App-scroll-top-button:hover{
+    background-color: #77b6fa;
+  }
+  
+  @media only screen and (max-width: 100px) {
+    .App-scroll-down-button
+    .App-scroll-top-button {
+      display: none;
+    }
+  }
+
+  .up {
+    background-image: url('data:image/svg+xml;utf8,<svg fill="white" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 14l5-5 5 5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .down {
+    background-image: url('data:image/svg+xml;utf8,<svg fill="white" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  
+
+  @media only screen and (max-width: 767px) {
+    .message-avatar {
+      max-width: 50px;
+      max-height: 50px;
+      border-radius: 5%;
+      margin-right: 10px;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .message-avatar {
+      max-width: 150px;
+      max-height: 150px;
+      border-radius: 5%;
+      margin-right: 10px;
+    }
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .popup {
+      position: fixed;
+      top: 50%;
+      justify-content: center;
+      width: 90%;
+      transform: translateY(-50%);
+      background: #757575;
+      border: 1px solid #000000;
+      padding: 10px;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .popup {
+      position: fixed;
+      top: 50%;
+      right: 10px;
+      width: 500px;
+      transform: translateY(-50%);
+      background: #757575;
+      border: 1px solid #000000;
+      padding: 10px;
+    }
+  }
+
+
+
+.message-input-popup {
+    width: 100%;
+    height: 200px; 
+    resize: none;
+}
+
+.close-button {
+    margin-right: 5px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+
+.message-fust-link {
+  margin-right: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid #000;
+  background-color: #f2f2f2; 
+  color: #000;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.message-fust-link:link {
+  margin-right: 10px;
+  cursor: pointer;
+  text-decoration: none; 
+  color: rgb(7, 209, 245);
+}
+.message-fust-link:visited {
+  margin-right: 10px;
+  cursor: pointer;
+  text-decoration: none; 
+  color: rgb(7, 209, 245);
+}
+
+.message-fust-link:hover {
+  margin-right: 10px;
+  cursor: pointer;
+  text-decoration: none; 
+  color: rgb(7, 117, 168);
+  border: 1px solid rgb(7, 117, 168);
+}
+.drag-drop-field {
+  border: 2px dashed #2196F3;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.drag-drop-field.highlighted {
+  background-color: #f0f8ff;
+}
+
+.drag-drop-field p {
+  margin: 0;
+}
+
+.drag-drop-field::before {
+  content: "\1F4CE";
+  font-size: 60px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.spoiler {
+  background-color: black;
+  color: black;
+}
+
+.spoiler:hover {
+  color: white;
+}
+

@@ -1,0 +1,54 @@
+version: "3"
+services:
+  postgres:
+    image: "postgres:latest"
+    environment:
+      - POSTGRES_PASSWORD=postgres_password
+    volumes:
+         - ./server/database:/docker-entrypoint-initdb.d/
+
+
+  nginx:
+    depends_on:
+      - api
+      - client
+    restart: always
+    build:
+      dockerfile: Dockerfile
+      context: ./nginx
+    ports:
+      - "4050:80"
+    security_opt:
+         - no-new-privileges
+  api:
+    build:
+      dockerfile: Dockerfile
+      context: "./server"
+    volumes:
+      - ./server:/app
+      - /server/node_modules
+      - /app/uploads
+    environment:
+      - PGUSER=postgres
+      - PGHOST=postgres
+      - PGDATABASE=forum
+      - PGPASSWORD=postgres_password
+      - PGPORT=5432
+    ports:
+      - "4000:4000"
+    security_opt:
+         - no-new-privileges
+  client:
+    stdin_open: true
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    build:
+      dockerfile: Dockerfile
+      context: ./client
+    volumes:
+      - /app/node_modules
+      - ./client:/app
+    security_opt:
+         - no-new-privileges
+    ports:
+      - "25252:25252"

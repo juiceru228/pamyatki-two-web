@@ -1,0 +1,46 @@
+.Greet {
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: 1em;
+    display: inline-block;
+    vertical-align: middle;
+    transition: color 0.1s;
+  }
+  
+  .Greet:hover {
+    color: #9a9faa;
+  }
+
+  .GreetForm {
+    margin-left: auto;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .App-buttonToMain  {
+    vertical-align: middle;
+    display: inline-block;
+    margin-top: 1em;
+    margin-left: 1em;
+    transition: color 0.1s;
+  }
+
+  .App-buttonToMain:hover {
+    color: #9a9faa;
+  }
+  
+  .App-button {
+    padding: 30px 20px;
+    background-color: #282c34;
+    color: white;
+    border: none;
+    transition: color 0.1s;
+  }
+  
+  .App-button:hover {
+    color: #b3c6ee;
+  }
+  
+  .App-link {
+    color: #61fbc0;
+  }

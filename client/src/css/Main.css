@@ -1,0 +1,129 @@
+.App-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .App-create-thread {
+    width: 50%; 
+    margin-bottom: 20px;
+  }
+  
+  .App-threads {
+    width: 50%; 
+    
+  }
+  
+  .App-thread {
+    margin-bottom: 10px; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .App-buttonToMessages {
+    transition: color 0.1s;
+  }
+  
+  .App-buttonToMessages:hover {
+    color: #a3ece9;
+  }
+  
+  
+  .App-delete-button {
+    margin-left: 10px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px; 
+    cursor: pointer; 
+  }
+  
+  .App-delete-button:hover {
+    background-color: #d32f2f;
+  }
+  
+  .App-create-thread-form {
+    text-align: right;
+    flex-direction: column;
+  
+  }
+  
+  .App-create-thread-input {
+    width: 100%;
+    padding: 100px;
+    font-size: 16px;
+    margin-bottom: 5px;
+    height: 100%;
+
+  }
+  
+  .App-create-thread-text{
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 20px;
+  }
+  .App-create-thread-button {
+    padding: 6px 16px;
+    font-size: 16px;
+    background-color: #2e7232;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+    color: white;
+  }
+  
+  .App-create-thread-button:hover {
+    background-color: #1baa23;
+  }
+
+  .App-footer {
+    text-align: center;
+    background-color: #282c34;
+    justify-content: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+  }
+  
+  .container {
+
+    display: flex;
+    align-items: center;
+  }
+  
+  .App-header {
+  
+    min-height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    
+  }
+
+  .App-horizontList {
+    background-color: #282c34;
+    align-items: center;
+    display: flex;
+    min-height: 10vh;
+    list-style-type: none;
+    
+  }
+  
+  .App-footer {
+    text-align: center;
+    background-color: #282c34;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+  }

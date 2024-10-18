@@ -1,1 +1,1 @@
-# pamyatki-two-web
+LINK: https://p2w.pro

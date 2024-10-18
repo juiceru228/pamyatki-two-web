@@ -1,0 +1,382 @@
+
+.App {
+  text-align: center;
+}
+
+
+.App-header {
+  
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  
+}
+
+.App-list {
+  background-color: white;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #282c34;
+}
+
+.container {
+
+  display: flex;
+  align-items: center;
+}
+
+
+.Greet {
+  margin-top: 1em;
+  margin-left: auto;
+  margin-right: 1em;
+  display: inline-block;
+  vertical-align: middle;
+  transition: color 0.1s;
+}
+
+.Greet:hover {
+  color: #9a9faa;
+}
+
+.App-horizontList {
+  background-color: #282c34;
+  align-items: center;
+  display: flex;
+  min-height: 10vh;
+  list-style-type: none;
+  
+}
+
+.App-button {
+  padding: 30px 20px;
+  background-color: #282c34;
+  color: white;
+  border: none;
+  transition: color 0.1s;
+}
+
+.App-buttonToMain  {
+  vertical-align: middle;
+  display: inline-block;
+  margin-top: 1em;
+  margin-left: 1em;
+  transition: color 0.1s;
+}
+
+.App-buttonToMain:hover {
+  color: #9a9faa;
+}
+
+.App-button:hover {
+  color: #b3c6ee;
+}
+
+.App-link {
+  color: #61fbc0;
+}
+
+.App-link:hover {
+  color: #73fb61;
+}
+
+
+.App-footer {
+  text-align: center;
+  background-color: #282c34;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.thread-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  
+}
+
+.message-container {
+  flex: 1;
+  padding-right: 20px;
+  
+}
+
+.page-title {
+  text-align: center;
+  font-size: 24px;
+}
+
+.message-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.message-item {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #cac5c5; 
+  border-radius: 5px;
+}
+
+.message-content {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.message-media {
+  max-width: 100%;
+  margin-top: 10px;
+}
+
+.create-message {
+  flex: 0 0 300px;
+}
+
+.form-title {
+  font-size: 20px;
+}
+
+.message-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.file-input {
+  margin-bottom: 10px;
+}
+
+.submit-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+.message-author {
+  font-size: 12px;
+  margin-right: 10px; 
+}
+
+.message-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.message-number {
+  margin-left: auto;
+  color: #068fb1;
+  font-size: 12px;
+}
+
+.replies-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.reply-item {
+  margin-right: 5px;
+}
+
+.message-reply-link:link {
+  text-decoration: none; 
+  color: rgb(7, 209, 245);
+}
+.message-reply-link:visited {
+  text-decoration: none; 
+  color: rgb(7, 209, 245);
+}
+
+.message-reply-link:hover {
+  text-decoration: none; 
+  color: rgb(7, 117, 168);
+}
+
+.message-link:link {
+  text-decoration: none; 
+  color: rgb(7, 209, 245);
+}
+
+.message-link:visited {
+  text-decoration: none; 
+  color: rgb(7, 209, 245);
+}
+
+.message-link:hover {
+  text-decoration: none; 
+  color: rgb(7, 117, 168);
+}
+
+.App-scroll-top-button {
+  position: fixed;
+  right: 20px;
+  top: 40px;
+  background-color: #84878a;
+  border: none;
+  border-radius: 5px;
+  padding: 20px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.App-scroll-down-button {
+  position: fixed;
+  right: 20px; 
+  bottom: 20px;
+  background-color: #84878a; 
+  border: none;
+  border-radius: 5px;
+  padding: 20px 20px;
+  font-size: 16px; 
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.App-scroll-down-button:hover{
+  background-color: #77b6fa;
+}
+.App-scroll-top-button:hover{
+  background-color: #77b6fa;
+}
+
+@media only screen and (max-width: 100px) {
+  .App-scroll-down-button
+  .App-scroll-top-button {
+    display: none; /* Скрыть элемент */
+  }
+}
+
+
+
+/*MainPage*/
+
+.App-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+
+.App-create-thread {
+  margin-bottom: 20px;
+}
+
+
+.App-threads {
+  width: 50%; 
+}
+
+
+.App-thread {
+  margin-bottom: 10px; 
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+.App-buttonToMessages {
+  transition: color 0.1s;
+}
+
+.App-buttonToMessages:hover {
+  color: #a3ece9;
+}
+
+
+.App-delete-button {
+  margin-left: 10px;
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px; 
+  cursor: pointer; 
+}
+
+.App-delete-button:hover {
+  background-color: #d32f2f;
+}
+
+/* Стили для формы создания треда */
+.App-create-thread-form {
+  text-align: right;
+  flex-direction: column;
+
+}
+
+/* Стили для поля ввода заголовка треда */
+.App-create-thread-input {
+  width: 100%;
+  padding: 100px;
+  font-size: 16px;
+  margin-bottom: 5px;
+
+
+}
+
+/* Стили для кнопки создания треда */
+.App-create-thread-text{
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+.App-create-thread-button {
+  padding: 6px 16px;
+  font-size: 16px;
+  background-color: #2e7232;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.App-create-thread-button:hover {
+  background-color: #1baa23;
+}
+/*others*/
+.up {
+  background-image: url('data:image/svg+xml;utf8,<svg fill="white" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 14l5-5 5 5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.down {
+  background-image: url('data:image/svg+xml;utf8,<svg fill="white" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
