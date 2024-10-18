@@ -8,7 +8,7 @@ Why not?
 ~~In the root directory, where docker-compose.yml, in the terminal write the following:~~<br />
 Doesn't work, too lazy to fix it<br />
 ```console
-docker-compose up --build
+docker-compose up -d
 ```
 # Enjoy!
 **LINKs**:
