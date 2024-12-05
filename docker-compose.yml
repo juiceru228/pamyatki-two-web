@@ -25,9 +25,9 @@ services:
       dockerfile: Dockerfile
       context: "./server"
     volumes:
-      - ./server:/app
       - /server/node_modules
       - /app/uploads
+      - ./server:/app
     environment:
       - PGUSER=postgres
       - PGHOST=postgres
